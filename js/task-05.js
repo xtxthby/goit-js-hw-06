@@ -8,6 +8,3 @@ function onInputChange(event) {
     output.textContent = event.currentTarget.value;
 }
 
-// textInput.addEventListener("input", (event) => {
-//   output.textContent = event.currentTarget.value;
-// });

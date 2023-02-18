@@ -4,11 +4,10 @@ inputEl.addEventListener('blur', onInputBlur);
 
 function onInputBlur(event) {
     const total = event.currentTarget.value.length
-    if (inputEl.dataset.length < total) {
+    if (Number(inputEl.dataset.length) !== total) {
         inputEl.classList.add('invalid');
         return;
     }
     inputEl.classList.add('valid');
 }
-
 
